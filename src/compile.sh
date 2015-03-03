@@ -329,7 +329,7 @@ fi
 
 #php may be called php.gcno
 #same for php-cgi.
-for binary in php php-cgi php-config phpize; do
+for binary in php php-config phpize; do
     if [ -f "$instdir/bin/$binary" ]; then
         ln -fs "$instdir/bin/$binary" "$shbindir/$binary-$VERSION"
     elif [ -f "$instdir/bin/$binary.gcno" ]; then
